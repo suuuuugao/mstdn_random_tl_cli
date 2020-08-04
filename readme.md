@@ -1,8 +1,7 @@
-Name
-====
 mstdn_random_tl_cli
+====
 
-Overview
+## Overview
 ターミナル上にフォローしている人のトゥートをランダムに表示させる。
 
 ## Requirement
