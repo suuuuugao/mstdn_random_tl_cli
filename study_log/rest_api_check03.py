@@ -1,11 +1,7 @@
-import requests
-import json
+from . import rest_api_check01
+from . import rest_api_check02
 
-url = 'https://muknown.jp'
+rest_api_check01.req_func()
+print(rest_api_check02.random_func())
 
-res = requests.get(url)
 
-lists = json.loads(res.text)
-
-for list in lists:
-    print(list['name'] + ':' + list['alpha2Code'])

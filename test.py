@@ -10,6 +10,8 @@ load_dotenv(dotenv_path)
 token_key = os.environ.get("TOKEN_KEY")
 auth = "Bearer " + token_key
 
+url = "https://muknown.jp"
+
 resp = requests.get(
     "https://muknown.jp/api/v1/timelines/home?limit=30",
     headers={
@@ -21,4 +23,5 @@ resp = requests.get(
 
 for status in resp.json():
     if random.randint(0,1):
+        print(status["account"]["username"])
         print(status["content"])
