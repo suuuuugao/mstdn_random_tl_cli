@@ -11,7 +11,7 @@ auth = "Bearer " + token_key
 url = "https://muknown.jp/api/v1/timelines/home?limit=30"
 
 def req_func():
-    resp = requests.get(
+    return requests.get(
         url,
         headers={
             "Authorization": auth,
